@@ -13,7 +13,7 @@ internal class Game
 
     public Game()
     {
-        Tries = 0;
+        Tries = MaxTries;
         Number = Rnd.Next(Low, High);
     }
 
@@ -26,7 +26,7 @@ internal class Game
      */
     public bool CheckGuess(int guess)
     {
-        Tries++;
+        Tries--;
         var diff = guess - Number;
         var message = diff switch
         {
@@ -40,7 +40,7 @@ internal class Game
 
     public bool TriesRemain()
     {
-        var triesRemain = Tries <= MaxTries;
+        var triesRemain = Tries > 0;
         if (!triesRemain)
         {
             Console.WriteLine($"Sorry, you didn't guess the right number on {MaxTries} tries");
