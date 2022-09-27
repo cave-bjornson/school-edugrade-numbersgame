@@ -4,6 +4,10 @@
 
 namespace NumbersGame;
 
+
+/// <summary>
+/// Contains state and methods for the guessing game.
+/// </summary>
 internal class Game
 {
     private const int Low = 1;
@@ -24,6 +28,14 @@ internal class Game
      * Returns true if guess is right. Prints different responses if
      * guess is right, lower or higher.
      */
+
+    
+    /// <summary>
+    /// Checks if guess is right and outputs different responses
+    /// depending on result.
+    /// </summary>
+    /// <param name="guess"> is the guessed number.</param>
+    /// <returns><c>true</c> if guess is right.</returns>
     public bool CheckGuess(int guess)
     {
         Tries--;
@@ -38,6 +50,12 @@ internal class Game
         return guess == Number;
     }
 
+
+    /// <summary>
+    /// Checks if any tries remaining and outputs
+    /// a message if none remains.
+    /// </summary>
+    /// <returns><c>true</c> if remaining tries.</returns>
     public bool TriesRemain()
     {
         var triesRemain = Tries > 0;
