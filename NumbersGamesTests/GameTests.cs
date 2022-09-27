@@ -32,7 +32,7 @@ namespace NumbersGameTests
         }
 
         [Fact]
-        public void TriesRemain_MoreThanMax_ReturnFalse()
+        public void TriesRemain_LessThanZero_ReturnFalse()
         {
             for (int i = 0; i <= MaxTries; i++)
             {
