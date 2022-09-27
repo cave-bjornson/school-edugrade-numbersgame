@@ -15,5 +15,5 @@ Det du ska skapa är ett rätt enkelt spel där användaren får gissa ett numme
 - [x]  Användaren ska sedan mata in ett tal som den vill gissa på
 - [x]  Om talet är fel ska programmet svara med antingen "Tyvärr du gissade för lågt!" eller "Tyvärr du gissade för högt!" beroende på om talet som användaren gissade på var just högre eller lägre än det som skulle gissas.
 - [x]  Om användaren gissar rätt ska programmet skriva ut "Woho! Du gjorde det!"
-- [ ]  Om användaren har gissat fem (5) gånger och inte fått till rätt tal ska programmet skriva ut Tyvärr du lyckades inte gissa talet på fem försök!" och användaren får inte gissa mer
+- [x]  Om användaren har gissat fem (5) gånger och inte fått till rätt tal ska programmet skriva ut Tyvärr du lyckades inte gissa talet på fem försök!" och användaren får inte gissa mer
 - [x]  Någon del av din kod ska vara i en egen funktion/metod. Exempelvis kan du ha en funktion för att kolla om gissningen är rätt eller fel som heter `CheckGuess()`
